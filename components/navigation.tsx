@@ -28,7 +28,7 @@ export function Navigation() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2 group">
             <div className="relative">
-              <Leaf className="h-8 w-8 text-primary animate-pulse-glow" />
+              <Leaf className="h-8 w-8 text-primary animate-pulse-glow border rounded-sm" />
               <div className="absolute inset-0 h-8 w-8 text-accent opacity-50 animate-ping"></div>
             </div>
             <span className="text-xl font-bold gradient-text font-[family-name:var(--font-poppins)]">GreenRewards</span>
@@ -51,7 +51,7 @@ export function Navigation() {
               key={item.name}
               href={item.href}
               className={cn(
-                "text-sm font-semibold leading-6 transition-all duration-300 hover:text-primary hover:scale-105 font-[family-name:var(--font-inter)]",
+                "text-sm font-semibold leading-6 transition-all duration-300 hover:text-primary hover:scale-105 font-[family-name:var(--font-inter)] border rounded-md px-2 py-1",
                 pathname === item.href ? "text-primary neon-glow" : "text-muted-foreground hover:neon-glow-accent",
               )}
             >
